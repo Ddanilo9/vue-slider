@@ -14,7 +14,23 @@ const app = new Vue({
 
 	},
 	methods: {
-		
+		nextSlide(){
+			if (this.active >= this.slides.length -1){
+				this.active = 0;
+			} 
+			else {
+				this.active++;
+			}
+			
+		},
+		prevSlide(){
+			if (this.active < this.slides.length){
+				this.active = 4;
+			} 
+			else {
+				this.active--;
+			}
+		}
 	},
 	
 })

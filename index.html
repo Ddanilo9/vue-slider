@@ -20,17 +20,17 @@
           <ul class="slides-wrapper">
 
             <li class="slide active">
-              <img class="slide" :src="slides[active]" alt="">
+              <img :src="slides[active]" alt="">
             </li>
 
           </ul>
 
           <div class="arrows">
             <p class="arrow-prev">
-              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-left" @click="prevSlide"></i>
             </p>
             <p class="arrow-next">
-              <i class="fa-solid fa-chevron-right"></i>
+              <i class="fa-solid fa-chevron-right" @click="nextSlide"></i>
             </p>
           </div>
 
